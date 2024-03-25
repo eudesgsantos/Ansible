@@ -1,5 +1,5 @@
 - name: Esantos Ansible Playbook
   become: true
-  hosts: all #"apks_bmw_cpt"
+  hosts: all #"teste"
   roles:
     - ping

@@ -4,11 +4,4 @@ esantos_ec2:
     eu_ec2:
       hosts:
         ec2-1:
-          ansible_host: ubuntu@ec2-18-184-59-238.eu-central-1.compute.amazonaws.com
-
-# apks_bmw:
-#   children:
-#     apks_bmw_cpt:
-#       hosts:
-#         apks_bmw_cpt_1:
-#         apks_bmw_cpt_2:
+          ansible_host: ubuntu@ec2-3-124-188-16.eu-central-1.compute.amazonaws.com
