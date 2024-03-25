@@ -1,0 +1,10 @@
+- name: Esantos Ansible Playbook
+  become: true
+  hosts: all #"teste"
+  tasks:
+    - name: Ping my hosts
+      ansible.builtin.ping:
+
+  - name: Print message
+    ansible.builtin.debug:
+      msg: Ping
