@@ -1,4 +1,4 @@
-- name: Esantos Ansible Playbook
+- name: Esantos Ping Playbook
   become: true  # Assuming tasks require elevated privileges
   hosts: all
 
