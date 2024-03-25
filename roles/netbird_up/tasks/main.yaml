@@ -1,0 +1,13 @@
+--- 
+  - name: Run NetBird
+    shell: netbird up
+
+- name: Run NetBird and assign setup key
+  shell: netbird up --setup-key BEB34E25-4F10-4B0F-AD6C-89415F309803
+  when: '''netbird'' not in ansible_facts.packages'
+
+- name: Check if NetBird is running
+  shell: netbird up
+  register: result
+  changed_when: result.stdout == 'Connected'
+  when: '''netbird'' in ansible_facts.packages'
